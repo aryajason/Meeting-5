@@ -18,7 +18,7 @@ int main()
 		}
  	}
 
-vector <string> vTest = {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", 
+vector <string> vTest = {   "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", 
                             "11", "Fizz", "13", "14", "Fizzbuzz", "16", "17", "Fizz", "19", 
                             "Buzz", "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28", 
                             "29", "Fizzbuzz", "31", "32", "Fizz", "34", "Buzz", "Fizz", "37", 
@@ -28,9 +28,9 @@ vector <string> vTest = {"1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz"
                             "Buzz", "Fizz", "67", "68", "Fizz", "Buzz", "71", "Fizz", "73", 
                             "74", "Fizzbuzz", "76", "77", "Fizz", "79", "Buzz", "Fizz", "82", 
                             "83", "Fizz", "Buzz", "86", "Fizz", "88", "89", "Fizzbuzz", "91", 
-                            "92", "Fizz", "94", "Buzz", "Fizz", "97", "98", "Fizz", "Buzz"};
+                            "92", "Fizz", "94", "Buzz", "Fizz", "97", "98", "Fizz", "Buzz"  } ;
     
-    if(vTest == v) cout<<"The test SUCCESSFULLY passed"<<'\n';
-    else cout<<"The test UnSUCCESSFULLY passed"<<'\n';
+    if (vTest == v) cout<<"The test SUCCESSFULLY passed"<<'\n';
+    else cout<<"The test failed "<<'\n';
 
 }
