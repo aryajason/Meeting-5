@@ -19,8 +19,9 @@ int main()
  	}
 
  	for (auto x : v) { // after the loop finish, the program uses a range-based for loop to iterate over the vector v. The variable x will take each element of the vector one by one
- 		cout << x << "\n"; // print each element followed by a newline
+ 		cout << x << ' '; // print each element followed by a newline
  	}
-
+    cout <<'\n' ;
+    
  	return 0; // end program
 }
