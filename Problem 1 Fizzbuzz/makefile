@@ -2,7 +2,7 @@
 CXX = g++
 CXXFLAGS = -Wall
 TARGET = Problem1
-SRC = Problem1.cpp
+SRC = Prob1.cpp
 
 # Default target: compile the program
 all: $(TARGET)
