@@ -1,23 +1,27 @@
-# Variables
-CXX = g++
-CXXFLAGS = -Wall
-TARGET = Problem1
-SRC = Prob1.cpp
+# Target to compile the object file
+main: main.o
+	g++ main.o -o main.exe
 
-# Default target: compile the program
-all: $(TARGET)
+# Target to compile the C++ program
+main.o: main.cpp
+	g++ -c main.cpp -o main.o
 
-# Compile the Problem1.cpp
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+# Target to run the program (interactively)
+run: main
+	./main.exe
 
-# Run the program in test mode (using test.txt)
-test: $(TARGET)
-	./$(TARGET) test
+# Target to compile the object Test file
+mainTest: mainTest.o
+	g++ mainTest.o -o mainTest.exe
 
-# Clean up the compiled files
+# Target to compile the C++ Test program
+mainTest.o: mainTest.cpp
+	g++ -c mainTest.cpp -o mainTest.o
+
+# Target to run the Test program
+test: mainTest
+	./mainTest.exe
+
+# Target to clean up compiled files
 clean:
-	rm -f $(TARGET)
-
-# Phony targets to avoid conflicts
-.PHONY: all clean test
+	rm -f main.o mainTest.o main.exe mainTest.exe
