@@ -27,5 +27,5 @@ int main()
     vector <int> v(n) expectedoutput = { 10 8 6 4 2 } 
 	} ;
   if (expectedoutput==ans) cout <<"Succesfully"<<'/n';
-  else cout << "Failed" << '/n'
+  else cout << "Failed" << '/n' ;
 }
